@@ -5,5 +5,8 @@ API Backend Controle Financeiro
 - Express
 - MongoDB
 
-# Meta
+## Instalação
+    npm install
+
+## Meta
 Leonardo Nascimento Cintra (leonardo.ncintra@outlook.com)
