@@ -10,7 +10,3 @@ server.use(bodyParser.json())
 server.listen(port, function() {
     console.log(`API Controle Financeiro running on port ${port}.`)
 })
-
-server.use(function(req, res, next) {
-    res.send('Funcionou')
-})
