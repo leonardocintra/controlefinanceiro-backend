@@ -1,6 +1,8 @@
 const express = require('express')
 
-/* O parametro server nessa function, é realmente  "server" (express) que consta no arquivo server.js
+/* 
+    O parametro server nessa function, é realmente  "server" (express) 
+    que consta no arquivo server.js
 */
 module.exports = function(server) {
     
