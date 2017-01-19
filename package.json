@@ -4,7 +4,8 @@
   "description": "Controle Financeiro - API",
   "main": "loader.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "production": "pm2 start loader.js --name backend"
   },
   "repository": {
     "type": "git",
