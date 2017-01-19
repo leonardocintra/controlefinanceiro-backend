@@ -1,0 +1,19 @@
+{
+  "name": "controlefinanceiro-backend",
+  "version": "1.0.0",
+  "description": "Controle Financeiro - API",
+  "main": "loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardocintra/controlefinanceiro-backend.git"
+  },
+  "author": "Leonardo Nascimento Cintra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardocintra/controlefinanceiro-backend/issues"
+  },
+  "homepage": "https://github.com/leonardocintra/controlefinanceiro-backend#readme"
+}
