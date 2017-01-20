@@ -1,8 +1,11 @@
 const _ = require('lodash')
 const BillingCycle = require('../billingCycle/billingCycle')
 
-// Mais uma funcao middleware
+
+// Sumario do Serviço de Pagamento
 function getSummary(req, res) {
+
+    // Toda essa funcao aqui é uma operação que se faz dentro do mongoDB
     BillingCycle.aggregate({
         $project: {credit: { $sum: "$credits.value"}, debt: {$sum: "$debts.value"}}
     }, {
@@ -22,3 +25,5 @@ function getSummary(req, res) {
         }
     })
 }
+
+module.exports = { getSummary }
