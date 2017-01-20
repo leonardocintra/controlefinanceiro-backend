@@ -6,11 +6,16 @@ const express = require('express')
 */
 module.exports = function(server) {
     
-    // API Routes - Somente funciona se tiver o /api/
+    // API Routes 
+    // Somente funcionará se tiver o /api/
     const router = express.Router()
     server.use('/api', router)
 
-    // rotas da API
+    // rotas da API - billingCycle
     const billingCycleService = require('../api/billingCycle/billingCycleService')
     billingCycleService.register(router, '/billingCycles')
+
+    // rotas da API - billingSummary
+    const billingSummaryService = require('../api/billingSummary/billingSummaryService')
+    router.route('/billingSummary').get(billingSummaryService.getSummary)
 }

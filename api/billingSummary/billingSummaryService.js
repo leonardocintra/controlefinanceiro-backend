@@ -4,7 +4,7 @@ const BillingCycle = require('../billingCycle/billingCycle')
 
 // Sumario do Serviço de Pagamento
 function getSummary(req, res) {
-
+    // Ver documentacao do Mongo (aggregate)
     // Toda essa funcao aqui é uma operação que se faz dentro do mongoDB
     BillingCycle.aggregate({
         $project: {credit: { $sum: "$credits.value"}, debt: {$sum: "$debts.value"}}
