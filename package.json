@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Controle Financeiro - API",
   "main": "loader.js",
+  "engines": {
+    "node": "6.9.1"
+  },
   "scripts": {
+    "start": "npm run loader.js",
     "dev": "nodemon",
     "production": "pm2 start loader.js --name backend"
   },
