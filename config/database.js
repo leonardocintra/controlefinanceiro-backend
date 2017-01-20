@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
-module.exports = mongoose.connect('mongodb://localhost/db_finance')
+
+module.exports = mongoose.connect(process.env.PROD_MONGODB | 'mongodb://localhost/db_finance')
 
 // Tradução dos erros de forma GLOBAL
 mongoose.Error.messages.general.required = "O atributo '{PATH}' é obrigatório."
